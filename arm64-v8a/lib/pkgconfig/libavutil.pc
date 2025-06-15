@@ -5,10 +5,10 @@ includedir=../libav/arm64-v8a/include
 
 Name: libavutil
 Description: FFmpeg utility library
-Version: 59.39.100
+Version: 60.3.100
 Requires: 
 Requires.private: 
 Conflicts:
 Libs: -L${libdir}  -lavutil 
-Libs.private: -pthread -lm -latomic -landroid -lmediandk
+Libs.private: -lm -latomic -landroid -lmediandk -pthread
 Cflags: -I${includedir}
